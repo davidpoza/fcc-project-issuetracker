@@ -1,11 +1,25 @@
-**FreeCodeCamp**- Information Security and Quality Assurance
-------
+API issue tracker - FreeCodeCamp
+=====================================
 
-Project Issue Tracker
+First of all you must create *.env* file with these variables:
+```
+MONGO_URI_PROD="mongodb+srv://user:password@server/database"
+MONGO_URI_DEV="mongodb+srv://user:password@server/database"
+MONGO_URI_TEST="mongodb+srv://user:password@server/database"
 
-1) SET NODE_ENV to `test` without quotes and set DB to your mongo connection string in .env file
-2) Complete the project in `routes/api.js` or by creating a handler/controller
-3) You will add any security features to `server.js`
-4) You will create all of the functional tests in `tests/2_functional-tests.js`
+# server port
+PORT=3000
+PORT_TEST=3001
+
+# enable mocha tests
+NODE_ENV=fcctesting
 
 
+```
+**You can create use a mongodb server at mongodb Atlas service for free.**
+
+# Install
+* git clone https://github.com/davidpoza/fcc-project-issuetracker
+* npm Install
+* npm start
+* go localhost:3000 on your browser
